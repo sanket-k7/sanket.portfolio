@@ -7,33 +7,120 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #4ade80;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #94f9c1;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: #4ade80;
+      margin-bottom: 15px;
+    }
+
     /* Education Table */
     #education table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        background: rgba(255, 255, 255, 0.05);
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: rgba(255, 255, 255, 0.05);
     }
 
     #education th, #education td {
-        padding: 15px;
-        text-align: left;
-        border: 1px solid rgba(74, 222, 128, 0.3);
+      padding: 15px;
+      text-align: left;
+      border: 1px solid rgba(74, 222, 128, 0.3);
     }
 
     #education th {
-        background: rgba(74, 222, 128, 0.2);
-        color: #f1f5f9;
+      background: rgba(74, 222, 128, 0.2);
+      color: #f1f5f9;
     }
 
     #education tr:hover {
-        background: rgba(74, 222, 128, 0.1);
+      background: rgba(74, 222, 128, 0.1);
+    }
+
+    /* Certificates Grid */
+    .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .certificate-card {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(255, 255, 255, 0.03));
+      border: 1px solid rgba(74, 222, 128, 0.3);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    }
+
+    .certificate-img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .certificate-card h3 {
+      margin-bottom: 10px;
+      color: #4ade80;
+    }
+
+    .certificate-card p {
+      font-size: 0.95rem;
+      color: #e2e8f0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      background: #0f172a;
     }
   </style>
 </head>
 
-  
 <body>
+
   <header>
     <img src="IMG_20231010_135011.jpg" alt="Sanket Kakde" class="profile-pic" />
     <h1>Sanket Kakde</h1>
@@ -45,50 +132,51 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
- 
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hi! I'm Sanket Kakde, currently pursuing my Bachelor's degree in Computer Science at MIT AOE Alandi.
-    I'm highly enthusiastic about web development, artificial intelligence, and solving real-world problems with code.</p>
+    <p>
+      Hi! I'm Sanket Kakde, currently pursuing my Bachelor's degree in Computer Science at MIT AOE Alandi. I'm highly enthusiastic about web development, artificial intelligence, and solving real-world problems with code.
+    </p>
   </section>
+
   <section id="education">
-        <h2>Education</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Sr.No</th>
-                    <th>College</th>
-                    <th>Year</th>
-                    <th>Status</th>
-                    <th>Education</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1.</td>
-                    <td>MIT AOE Alandi</td>
-                    <td>2025</td>
-                    <td>Pursuing</td>
-                    <td>Engineering</td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>B.D.P Parwa Junior College</td>
-                    <td>2024</td>
-                    <td>Passed</td>
-                    <td>12th</td>
-                </tr>
-                <tr>
-                    <td>3.</td>
-                    <td>Podar International School</td>
-                    <td>2022</td>
-                    <td>Passed</td>
-                    <td>10th</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <h2>Education</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Sr.No</th>
+          <th>College</th>
+          <th>Year</th>
+          <th>Status</th>
+          <th>Education</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>MIT AOE Alandi</td>
+          <td>2025</td>
+          <td>Pursuing</td>
+          <td>Engineering</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>B.D.P Parwa Junior College</td>
+          <td>2024</td>
+          <td>Passed</td>
+          <td>12th</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Podar International School</td>
+          <td>2022</td>
+          <td>Passed</td>
+          <td>10th</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
   <section id="projects">
     <h2>Projects</h2>
@@ -104,28 +192,33 @@
     <p>C Language</p>
     <p>Python</p>
   </section>
+
   <section id="achievement">
     <h2>Achievements</h2>
     <ul>
-        <li>Certified in Kali Linux & Basic Linux Programming</li>
-        <li>Certified in Python Course</li>
+      <li>Certified in Kali Linux & Basic Linux Programming</li>
+      <li>Certified in Python Course</li>
     </ul>
-</section>
-<section id="certificates" class="section">
+  </section>
+
+  <section id="certificates" class="section">
     <div class="container">
-        <h2>Certificates</h2>
-        <div class="certificates-grid">
-            <div class="certificate-card">
-                <img src="Screenshot 2025-04-15 024216.png" alt="Certified Web Developer Certificate" class="certificate-img">
-                <h3>Python course</h3>
-                <p>Completed an online course python course</p>
-            <div class="certificate-card">
-                <img src="Screenshot 2025-04-15 025703.png" alt="Google Digital Marketing Certificate" class="certificate-img">
-                <h3>Kali Linux</h3>
-                <p>Earned certification </p>
-            </div>
+      <h2>Certificates</h2>
+      <div class="certificates-grid">
+        <div class="certificate-card">
+          <img src="Screenshot 2025-04-15 024216.png" alt="Python Course Certificate" class="certificate-img" />
+          <h3>Python Course</h3>
+          <p>Completed an in-depth online Python course covering basics to advanced topics.</p>
         </div>
-    </div>
+        <div class="certificate-card">
+          <img src="Screenshot 2025-04-15 025703.png" alt="Kali Linux Certificate" class="certificate-img" />
+          <h3>Kali Linux</h3>
+          <p>Earned certification in Kali Linux and basic Linux programming.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: sanketkakede@gmail.com</p>
@@ -135,8 +228,5 @@
     <p>© 2025 Sanket Kakde</p>
   </footer>
 
-  <!-- Optional JavaScript can go here -->
 </body>
 </html>
-
-    
