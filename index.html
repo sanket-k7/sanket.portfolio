@@ -7,13 +7,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-gradient: linear-gradient(to right, #0f172a, #1e293b);
+      --bg: #0f172a;
       --text: #f1f5f9;
       --accent: #4ade80;
-      --accent-hover: #22c55e;
       --card: #1e293b;
-      --button-bg: #4ade80;
-      --button-text: #0f172a;
     }
 
     * {
@@ -24,7 +21,7 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: var(--bg-gradient);
+      background: var(--bg);
       color: var(--text);
       line-height: 1.6;
     }
@@ -38,23 +35,16 @@
       width: 130px;
       height: 130px;
       border-radius: 50%;
-      border: 4px solid var(--accent);
+      border: 3px solid var(--accent);
       margin-bottom: 20px;
-      box-shadow: 0 0 20px rgba(74, 222, 128, 0.4);
     }
 
     header h1 {
-      font-size: 2.5rem;
-      color: var(--accent);
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #cbd5e1;
+      font-size: 2rem;
     }
 
     nav {
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     nav a {
@@ -63,11 +53,10 @@
       color: var(--accent);
       font-weight: 600;
       transition: color 0.3s;
-      font-size: 1rem;
     }
 
     nav a:hover {
-      color: var(--accent-hover);
+      color: #22c55e;
     }
 
     .container {
@@ -81,15 +70,13 @@
       background: var(--card);
       border-radius: 12px;
       padding: 25px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
 
     section h2 {
       margin-bottom: 15px;
       color: var(--accent);
-      font-size: 1.8rem;
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 5px;
+      font-size: 1.5rem;
     }
 
     .certificates-grid {
@@ -115,7 +102,6 @@
       max-width: 100%;
       border-radius: 8px;
       margin-bottom: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     table {
@@ -132,37 +118,6 @@
       text-align: left;
     }
 
-    .contact-info {
-      font-size: 1.1rem;
-    }
-
-    .contact-info a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-
-    .contact-info a:hover {
-      color: var(--accent-hover);
-    }
-
-    .btn {
-      display: inline-block;
-      background: var(--button-bg);
-      color: var(--button-text);
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 15px;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: var(--accent-hover);
-    }
-
     footer {
       text-align: center;
       padding: 30px 0;
@@ -174,13 +129,12 @@
 <body>
 
   <header>
-    <img src="images/Screenshot 2025-04-15 033044.png" alt="Sanket Kakde" /> 
+    <img src="image/Screenshot 2025-05-20 122404.png" alt="Sanket Kakde" />
     <h1>Sanket Kakde</h1>
     <p>Computer Science Student</p>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
-      <a href="#strengths">Strengths</a>
       <a href="#projects">Projects</a>
       <a href="#certificates">Certificates</a>
       <a href="#contact">Contact</a>
@@ -199,17 +153,6 @@
       <p>✅ C Programming</p>
       <p>✅ Python</p>
       <p>✅ Git & GitHub</p>
-    </section>
-
-    <section id="strengths">
-      <h2>Strengths</h2>
-      <ul>
-        <li>💡 Quick Learner – Adapt rapidly to new technologies and concepts</li>
-        <li>🛠 Problem Solver – Enjoy finding smart solutions to real-world issues</li>
-        <li>🤝 Team Player – Collaborate effectively in group projects</li>
-        <li>📚 Curious Mind – Continuously explore new tools and frameworks</li>
-        <li>🧠 Analytical Thinking – Approach challenges with logic and clarity</li>
-      </ul>
     </section>
 
     <section id="projects">
@@ -267,10 +210,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <div class="contact-info">
-        <p>📧 Email: <a href="mailto:sanketkakede@gmail.com">sanketkakede@gmail.com</a></p>
-        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/sanket-kakde/" target="_blank">linkedin.com/in/sanket-kakde</a></p>
-      </div>
+      <p>📧 sanketkakede@gmail.com</p>
     </section>
   </div>
 
@@ -280,4 +220,3 @@
 
 </body>
 </html>
-
